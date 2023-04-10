@@ -14,8 +14,6 @@ header {
     margin-bottom: 30px;
 }
 
-
-
 .container {
     max-width: 450px;
     width: 100%;
@@ -40,4 +38,11 @@ input {
 
 ul li {
     padding-top: 30px;
+}
+
+#lista-tarefas {
+    display: none;
+}
+.completed {
+    text-decoration: line-through;
 }
