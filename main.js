@@ -2,9 +2,11 @@ function adicionarTarefa() {
     const adicionar = $('#nome-tarefa').val();
     const adicionarTarefa = $('<li>').text(adicionar);
 
-    $('#lista-tarefas').append(adicionarTarefa);
-    $('#lista-tarefas').css('display', 'block');
-    $('#nome-tarefa').val('');
+    if(adicionar!==''){
+        $('#lista-tarefas').append(adicionarTarefa);
+        $('#lista-tarefas').css('display', 'block');
+        $('#nome-tarefa').val('');
+    }
 }
 
 $(document).ready(function() {
